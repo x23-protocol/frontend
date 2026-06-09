@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.101.0",
-    "@x42/sdk": "file:../sdk",
+    "@x42/sdk": "git+https://github.com/x23-protocol/sdk.git",
     "lightweight-charts": "^5.2.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
