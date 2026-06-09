@@ -13,7 +13,6 @@ export default function MarketDetails() {
 
   const [yesBalance, setYesBalance] = useState('0');
   const [noBalance, setNoBalance] = useState('0');
-  const [isLoading, setIsLoading] = useState(true);
 
   // Market Info
   const [marketTitle, setMarketTitle] = useState('Loading...');
@@ -101,7 +100,7 @@ export default function MarketDetails() {
           address: marketId as `0x${string}`,
           abi: [paramsAbi],
           functionName: 'readMarketDeployParams'
-        }) as [string, bigint, string, string, bigint];
+        }) as any;
         colAddr = params[0] as `0x${string}`;
         setCollateralAddress(colAddr);
       }
