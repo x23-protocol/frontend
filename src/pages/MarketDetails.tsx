@@ -121,8 +121,6 @@ export default function MarketDetails() {
 
     } catch (e) {
       console.error("Failed to fetch balances", e);
-    } finally {
-      setIsLoading(false);
     }
   };
 

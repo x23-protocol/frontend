@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { usePublicClient } from 'wagmi';
 import { Link } from 'react-router-dom';
 import { sdk } from '../config/sdk';
-import { FTControllerV2ABI } from '@x42/sdk';
+import { FTControllerV2ABI } from '../sdk';
 
 export default function UserDashboard() {
   const [markets, setMarkets] = useState<any[]>([]);

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useAccount, useSendTransaction, useSwitchChain, usePublicClient, useReadContract } from 'wagmi';
 import { parseUnits, parseAbiItem, formatUnits, maxUint256, encodeFunctionData } from 'viem';
 import { sdk } from '../config/sdk';
-import { FTControllerV2ABI } from '@x42/sdk';
+import { FTControllerV2ABI } from '../sdk';
 import { erc20Abi } from 'viem';
 
 export default function AdminPanel() {

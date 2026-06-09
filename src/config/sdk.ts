@@ -1,4 +1,4 @@
-import { X42SDK } from "@x42/sdk";
+import { X42SDK } from "../sdk";
 
 // In a real app, these would come from .env
 const RPC_URL = "https://testrpc.xlayer.tech";
