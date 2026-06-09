@@ -1,10 +1,9 @@
-import { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { useAccount, useSendTransaction, usePublicClient, useReadContract, useBalance } from 'wagmi';
+import { useAccount, useSendTransaction, usePublicClient, useReadContract } from 'wagmi';
 import { sdk } from '../config/sdk';
 import PriceChart from '../components/PriceChart';
 import { parseAbiItem, erc20Abi, parseUnits, formatUnits, maxUint256, encodeFunctionData } from 'viem';
-import { FTControllerV2ABI } from '@x42/sdk';
 
 export default function MarketDetails() {
   const { id: marketId } = useParams<{ id: string }>();
